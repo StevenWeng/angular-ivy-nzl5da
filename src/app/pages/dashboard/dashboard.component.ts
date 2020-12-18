@@ -1,11 +1,11 @@
 import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: "pages",
+  selector: "dashboard",
   template: `
-    <h1>Hello page!</h1>
+    <h1>I'm dashboard!</h1>
   `
 })
-export class PagesComponent implements OnInit {
+export class DashboardComponent implements OnInit {
   ngOnInit() {}
 }

@@ -6,10 +6,9 @@ import { PagesModule } from "./pages/pages.module";
 
 import { AppComponent } from "./app.component";
 import { HelloComponent } from "./hello.component";
-import { PagesComponent } from "./pages/pages.component";
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, AppRoutingModule, PagesModule],
+  imports: [BrowserModule, FormsModule, AppRoutingModule],
   declarations: [AppComponent, HelloComponent],
   bootstrap: [AppComponent]
 })
