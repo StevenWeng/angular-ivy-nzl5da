@@ -1,6 +1,5 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
-import { DashboardComponent } from "./pages/dashboard/dashboard.component";
 import { PagesComponent } from "./pages/pages.component";
 
 const routes: Routes = [
@@ -10,7 +9,10 @@ const routes: Routes = [
     children: [
       {
         path: "dashboard",
-        component: DashboardComponent
+        loadChildren: () =>
+          import("./pages/dashboard/dashboard.module").then(
+            m => m.DashboardModule
+          )
       }
     ]
   },
