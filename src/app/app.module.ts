@@ -9,6 +9,7 @@ import { HelloComponent } from "./hello.component";
 import { PagesModule } from "./pages/pages.module";
 import { HighligntDirective } from "./commons/highlight.directive";
 import { UpperNameDirective } from "./commons/uppername.directive";
+import { LogNgModelDirective } from "./commons/logNgModel.directive";
 
 @NgModule({
   imports: [BrowserModule, FormsModule, AppRoutingModule, PagesModule],
@@ -16,7 +17,8 @@ import { UpperNameDirective } from "./commons/uppername.directive";
     AppComponent,
     HelloComponent,
     HighligntDirective,
-    UpperNameDirective
+    UpperNameDirective,
+    LogNgModelDirective
   ],
   bootstrap: [AppComponent]
 })
